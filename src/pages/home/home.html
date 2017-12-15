@@ -1,21 +1,33 @@
+
+<!-- Inicio header -->
 <ion-header>
-  <ion-navbar>
-      <button ion-button menuToggle>
+  <ion-navbar color="principal">
+      <button ion-button menuToggle><!--Boton Menu -->
         <ion-icon name="menu"></ion-icon>
       </button>    
   </ion-navbar>
 </ion-header>
+<!-- Fin -->
 
 <ion-content padding>
+
+  <!-- Inicio primer slider -->
   <ion-slides pager=true class="slider1">
     <ion-slide>
-      <h1>Slide 1</h1>
+      <img src="../../assets/imgs/slider1/BoticaBotiquinyAccesorios.jpg" alt="">
     </ion-slide>
     <ion-slide>
-      <h1>Slide 2</h1>
+        <img src="../../assets/imgs/slider1/BoticaCuidadoPersonal.jpg" alt="">
     </ion-slide>
     <ion-slide>
-      <h1>Slide 3</h1>
+        <img src="../../assets/imgs/slider1/BoticaSaludyBienestar.jpg" alt="">        
     </ion-slide>
   </ion-slides>
+  <!-- Fin -->
+
+  <!-- Inicio barra de busqueda -->
+  <div class="barraBusqueda">
+    <ion-icon name="search"></ion-icon>
+    <input type="text" id="inputBusqueda" placeholder="¿Buscas algo?"/>
+  </div>
 </ion-content>
