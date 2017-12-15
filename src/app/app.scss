@@ -42,3 +42,32 @@ ion-icon {
         mask-image: url("../assets/icon/botica-icono menu cupones.svg");
     }
 }
+
+.imagenMenu{
+    width: 80%;
+    display: block;
+    margin: auto; 
+    margin-top: 40px;  
+    margin-bottom: 20px;
+}
+
+
+ion-list{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    //background: yellow;
+}
+
+.listaMenu button{
+    color: $color-principal !important;
+    //background: red;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-around;
+    //align-items: center;
+}
+
+.prueba{
+    width: 20px;
+}
