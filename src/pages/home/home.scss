@@ -1,12 +1,20 @@
 $color-principal: #3500a7;
 $color-secundario: #12b84f;
 
-.header{
-    background-color: $color-principal;
+.scroll-content{
+    padding: 0 !important;
+    margin: 0 !important;
+    background: url("../../assets/imgs/botica-textura 2 completa.svg");
+    
 }
 
+
 .slider1{
+    padding-right: 35px;
+    padding-top: 32px;
     height: 200px;
+    width: 100% !important;
+    margin-left: 20px;
 }
 
 .barraBusqueda{
