@@ -1,7 +1,11 @@
+
+$color-principal: #3500a7;
+
 //Estilos que permitan usar iconos personalizados en la etiqueta ion-icon
 ion-icon {
     // Se aplican mascaras SVG para los iconos de las clases
     //que empiecen con "menu-"
+
     &[class*="menu-"] {
         mask-size: contain;
         mask-position: 50% 50%;
