@@ -1,16 +1,40 @@
-// http://ionicframework.com/docs/theming/
-
-
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+//Estilos que permitan usar iconos personalizados en la etiqueta ion-icon
+ion-icon {
+    // Se aplican mascaras SVG para los iconos de las clases
+    //que empiecen con "menu-"
+    &[class*="menu-"] {
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 1em;
+        height: 1em;
+        color: $color-principal;
+        border: none;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    // Se define la imagen correspondiente de cada icono
+    //asi como su nombre de clase
+    &[class*="menu-miPerfil"] {
+        mask-image: url("../assets/icon/botica-icono menu perfil.svg");
+    }
+    &[class*="menu-categorias"] {
+        mask-image: url("../assets/icon/botica-icono menu categorias.svg");
+    }
+    &[class*="menu-recordatorio"] {
+        mask-image: url("../assets/icon/botica-icono menu recordatorios.svg");
+    }
+    &[class*="menu-compras"] {
+        mask-image: url("../assets/icon/botica-icono menu compra programada.svg");
+    }
+    &[class*="menu-sugerencias"] {
+        mask-image: url("../assets/icon/botica-icono menu sugerencias.svg");
+    }
+    &[class*="menu-servicios"] {
+        mask-image: url("../assets/icon/botica-icono menu servicios.svg");
+    }
+    &[class*="menu-cupones"] {
+        mask-image: url("../assets/icon/botica-icono menu cupones.svg");
+    }
+}
