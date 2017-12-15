@@ -1,1 +1,19 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="NAV">
+    <ion-content>
+        <img src="../assets/imgs/botica-logo en menu.svg">
+        <ion-list>
+            <button ion-item>
+                <ion-icon name="menu-miPerfil"></ion-icon>
+                    Mi perfil
+            </button>
+            <button ion-item>
+                <ion-icon name="menu-categorias"></ion-icon>
+                    Categorias
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+
+<ion-nav #NAV [root]="rootPage"></ion-nav>
