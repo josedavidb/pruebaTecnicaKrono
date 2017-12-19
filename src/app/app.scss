@@ -41,6 +41,15 @@ ion-icon {
     &[class*="menu-cupones"] {
         mask-image: url("../assets/icon/botica-icono menu cupones.svg");
     }
+    &[class*="menu-llamada"] {
+        mask-image: url("../assets/icon/botica-icono llamada.svg");
+    }
+    &[class*="menu-chat"] {
+        mask-image: url("../assets/icon/botica-icono chat.svg");
+    }
+    &[class*="menu-ubicacion"] {
+        mask-image: url("../assets/icon/botica-icono ubicacion.svg");
+    }
 }
 
 .imagenMenu{
@@ -51,8 +60,12 @@ ion-icon {
     margin-bottom: 20px;
 }
 
+.menu-inner{
+    background: yellow !important;
+}
 
 ion-list{
+    background: url("../assets/imgs/botica-textura 1 cortada.svg");    
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -61,13 +74,19 @@ ion-list{
 
 .listaMenu button{
     color: $color-principal !important;
-    //background: red;
+    background: transparent !important;
     flex: 1 0 auto;
     display: flex;
     justify-content: space-around;
+    font-size: 20px;
     //align-items: center;
 }
 
 .prueba{
     width: 20px;
+}
+
+.texto-wrap ion-label{
+    display: flex;
+    white-space: inherit;
 }
